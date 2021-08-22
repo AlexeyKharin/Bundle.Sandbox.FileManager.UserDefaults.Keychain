@@ -1,0 +1,438 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		6C3E43D4CE03B4D07EC064D6 /* Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E950484AA22774A3C90031ED /* Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY.framework */; };
+		B41D8C4B26C2C2A40035B003 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C4A26C2C2A40035B003 /* AppDelegate.swift */; };
+		B41D8C4D26C2C2A40035B003 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C4C26C2C2A40035B003 /* SceneDelegate.swift */; };
+		B41D8C4F26C2C2A40035B003 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C4E26C2C2A40035B003 /* ViewController.swift */; };
+		B41D8C5226C2C2A40035B003 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D8C5026C2C2A40035B003 /* Main.storyboard */; };
+		B41D8C5426C2C2AD0035B003 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B41D8C5326C2C2AD0035B003 /* Assets.xcassets */; };
+		B41D8C5726C2C2AD0035B003 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B41D8C5526C2C2AD0035B003 /* LaunchScreen.storyboard */; };
+		B41D8C7426C3B7720035B003 /* PasswordController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C7326C3B7720035B003 /* PasswordController.swift */; };
+		B41D8C7E26C3DC710035B003 /* KeychainConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C7D26C3DC710035B003 /* KeychainConfiguration.swift */; };
+		B41D8C8826C3DE010035B003 /* KeyChainDataProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C8726C3DE010035B003 /* KeyChainDataProvider.swift */; };
+		B41D8C9126C423150035B003 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C9026C423150035B003 /* TabBarController.swift */; };
+		B41D8C9426C433590035B003 /* SettingsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C9326C433590035B003 /* SettingsTableViewController.swift */; };
+		B41D8C9726C433E80035B003 /* ChagePasswordTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B41D8C9626C433E80035B003 /* ChagePasswordTableViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		8EDEFA51711834BE8819E85D /* Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.release.xcconfig"; path = "Target Support Files/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.release.xcconfig"; sourceTree = "<group>"; };
+		B41D8C4726C2C2A40035B003 /* Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B41D8C4A26C2C2A40035B003 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B41D8C4C26C2C2A40035B003 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		B41D8C4E26C2C2A40035B003 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B41D8C5126C2C2A40035B003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B41D8C5326C2C2AD0035B003 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B41D8C5626C2C2AD0035B003 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B41D8C5826C2C2AD0035B003 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B41D8C7326C3B7720035B003 /* PasswordController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordController.swift; sourceTree = "<group>"; };
+		B41D8C7D26C3DC710035B003 /* KeychainConfiguration.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainConfiguration.swift; sourceTree = "<group>"; };
+		B41D8C8726C3DE010035B003 /* KeyChainDataProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyChainDataProvider.swift; sourceTree = "<group>"; };
+		B41D8C9026C423150035B003 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		B41D8C9326C433590035B003 /* SettingsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewController.swift; sourceTree = "<group>"; };
+		B41D8C9626C433E80035B003 /* ChagePasswordTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChagePasswordTableViewController.swift; sourceTree = "<group>"; };
+		DDCA8740BD7298A99C23E556 /* Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.debug.xcconfig"; path = "Target Support Files/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.debug.xcconfig"; sourceTree = "<group>"; };
+		E950484AA22774A3C90031ED /* Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B41D8C4426C2C2A40035B003 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6C3E43D4CE03B4D07EC064D6 /* Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		12CB1A407A9CE5241EC8C07A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E950484AA22774A3C90031ED /* Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B41D8C3E26C2C2A40035B003 = {
+			isa = PBXGroup;
+			children = (
+				B41D8C4926C2C2A40035B003 /* Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY */,
+				B41D8C4826C2C2A40035B003 /* Products */,
+				E9585F60ED33E4D3A39042D2 /* Pods */,
+				12CB1A407A9CE5241EC8C07A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B41D8C4826C2C2A40035B003 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B41D8C4726C2C2A40035B003 /* Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B41D8C4926C2C2A40035B003 /* Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY */ = {
+			isa = PBXGroup;
+			children = (
+				B41D8C4A26C2C2A40035B003 /* AppDelegate.swift */,
+				B41D8C4C26C2C2A40035B003 /* SceneDelegate.swift */,
+				B41D8C4E26C2C2A40035B003 /* ViewController.swift */,
+				B41D8C7326C3B7720035B003 /* PasswordController.swift */,
+				B41D8C7D26C3DC710035B003 /* KeychainConfiguration.swift */,
+				B41D8C9026C423150035B003 /* TabBarController.swift */,
+				B41D8C9626C433E80035B003 /* ChagePasswordTableViewController.swift */,
+				B41D8C5026C2C2A40035B003 /* Main.storyboard */,
+				B41D8C9326C433590035B003 /* SettingsTableViewController.swift */,
+				B41D8C5326C2C2AD0035B003 /* Assets.xcassets */,
+				B41D8C8726C3DE010035B003 /* KeyChainDataProvider.swift */,
+				B41D8C5526C2C2AD0035B003 /* LaunchScreen.storyboard */,
+				B41D8C5826C2C2AD0035B003 /* Info.plist */,
+			);
+			path = "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY";
+			sourceTree = "<group>";
+		};
+		E9585F60ED33E4D3A39042D2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DDCA8740BD7298A99C23E556 /* Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.debug.xcconfig */,
+				8EDEFA51711834BE8819E85D /* Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B41D8C4626C2C2A40035B003 /* Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B41D8C5B26C2C2AD0035B003 /* Build configuration list for PBXNativeTarget "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY" */;
+			buildPhases = (
+				80FDF4925C731557CAE35C58 /* [CP] Check Pods Manifest.lock */,
+				B41D8C4326C2C2A40035B003 /* Sources */,
+				B41D8C4426C2C2A40035B003 /* Frameworks */,
+				B41D8C4526C2C2A40035B003 /* Resources */,
+				16E2D23F5D5E9C1FC05E9B48 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY";
+			productName = "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY";
+			productReference = B41D8C4726C2C2A40035B003 /* Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B41D8C3F26C2C2A40035B003 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					B41D8C4626C2C2A40035B003 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+				};
+			};
+			buildConfigurationList = B41D8C4226C2C2A40035B003 /* Build configuration list for PBXProject "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B41D8C3E26C2C2A40035B003;
+			productRefGroup = B41D8C4826C2C2A40035B003 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B41D8C4626C2C2A40035B003 /* Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B41D8C4526C2C2A40035B003 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41D8C5726C2C2AD0035B003 /* LaunchScreen.storyboard in Resources */,
+				B41D8C5426C2C2AD0035B003 /* Assets.xcassets in Resources */,
+				B41D8C5226C2C2A40035B003 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		16E2D23F5D5E9C1FC05E9B48 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		80FDF4925C731557CAE35C58 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B41D8C4326C2C2A40035B003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B41D8C4F26C2C2A40035B003 /* ViewController.swift in Sources */,
+				B41D8C4B26C2C2A40035B003 /* AppDelegate.swift in Sources */,
+				B41D8C7426C3B7720035B003 /* PasswordController.swift in Sources */,
+				B41D8C4D26C2C2A40035B003 /* SceneDelegate.swift in Sources */,
+				B41D8C9726C433E80035B003 /* ChagePasswordTableViewController.swift in Sources */,
+				B41D8C9426C433590035B003 /* SettingsTableViewController.swift in Sources */,
+				B41D8C9126C423150035B003 /* TabBarController.swift in Sources */,
+				B41D8C8826C3DE010035B003 /* KeyChainDataProvider.swift in Sources */,
+				B41D8C7E26C3DC710035B003 /* KeychainConfiguration.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		B41D8C5026C2C2A40035B003 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41D8C5126C2C2A40035B003 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B41D8C5526C2C2AD0035B003 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B41D8C5626C2C2AD0035B003 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B41D8C5926C2C2AD0035B003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B41D8C5A26C2C2AD0035B003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B41D8C5C26C2C2AD0035B003 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DDCA8740BD7298A99C23E556 /* Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexey-Kharin.Bundle-Sandbox-FileManager-IOS-8-Kharin-ALEXEY";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B41D8C5D26C2C2AD0035B003 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8EDEFA51711834BE8819E85D /* Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.Alexey-Kharin.Bundle-Sandbox-FileManager-IOS-8-Kharin-ALEXEY";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B41D8C4226C2C2A40035B003 /* Build configuration list for PBXProject "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41D8C5926C2C2AD0035B003 /* Debug */,
+				B41D8C5A26C2C2AD0035B003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B41D8C5B26C2C2AD0035B003 /* Build configuration list for PBXNativeTarget "Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B41D8C5C26C2C2AD0035B003 /* Debug */,
+				B41D8C5D26C2C2AD0035B003 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B41D8C3F26C2C2A40035B003 /* Project object */;
+}

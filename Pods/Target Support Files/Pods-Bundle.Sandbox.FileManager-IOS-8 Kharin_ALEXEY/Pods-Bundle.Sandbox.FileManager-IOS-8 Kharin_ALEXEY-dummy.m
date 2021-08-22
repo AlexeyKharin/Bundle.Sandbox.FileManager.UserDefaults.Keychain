@@ -1,0 +1,5 @@
+#import <Foundation/Foundation.h>
+@interface PodsDummy_Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY : NSObject
+@end
+@implementation PodsDummy_Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY
+@end

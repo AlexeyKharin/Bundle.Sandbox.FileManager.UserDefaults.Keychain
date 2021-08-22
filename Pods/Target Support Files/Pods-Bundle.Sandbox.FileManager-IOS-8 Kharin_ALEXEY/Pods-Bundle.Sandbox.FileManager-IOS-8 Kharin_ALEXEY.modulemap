@@ -1,0 +1,6 @@
+framework module Pods_Bundle_Sandbox_FileManager_IOS_8_Kharin_ALEXEY {
+  umbrella header "Pods-Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY-umbrella.h"
+
+  export *
+  module * { export * }
+}
