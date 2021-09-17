@@ -1,10 +1,3 @@
-//
-//  KeyChainDataProvider.swift
-//  Bundle.Sandbox.FileManager-IOS-8 Kharin_ALEXEY
-//
-//  Created by Alexey Kharin on 11.08.2021.
-//
-
 import Foundation
 import KeychainAccess
 

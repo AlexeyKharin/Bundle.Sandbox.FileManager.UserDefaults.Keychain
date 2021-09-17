@@ -70,11 +70,11 @@
                                         <textInputTraits key="textInputTraits"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WE2-QV-wrC">
-                                        <rect key="frame" x="25" y="142" width="128" height="30"/>
+                                        <rect key="frame" x="25" y="142" width="264" height="30"/>
                                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="30" id="1K3-1j-aHu"/>
-                                            <constraint firstAttribute="width" constant="128" id="w3e-VR-l4c"/>
+                                            <constraint firstAttribute="width" constant="264" id="w3e-VR-l4c"/>
                                         </constraints>
                                         <state key="normal" title="Button"/>
                                         <connections>
@@ -241,14 +241,18 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KOw-nM-63l">
-                                                    <rect key="frame" x="345" y="8" width="51" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="KOw-nM-63l">
+                                                    <rect key="frame" x="345" y="8" width="51" height="27.5"/>
                                                     <connections>
                                                         <action selector="sortAscending:" destination="9Zd-Ee-rl6" eventType="valueChanged" id="Vso-6A-ryh"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstItem="KOw-nM-63l" firstAttribute="top" secondItem="IzF-g4-B3b" secondAttribute="top" constant="8" id="ALH-4Q-NnG"/>
+                                                <constraint firstAttribute="trailing" secondItem="KOw-nM-63l" secondAttribute="trailing" constant="20" id="Dsm-c1-dZw"/>
+                                                <constraint firstAttribute="bottom" secondItem="KOw-nM-63l" secondAttribute="bottom" constant="8.5" id="G9t-ab-PL2"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" id="vfZ-wL-C3G">
@@ -265,14 +269,18 @@
                                                     <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9jn-08-Ysb">
-                                                    <rect key="frame" x="345" y="8" width="51" height="27"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="9jn-08-Ysb">
+                                                    <rect key="frame" x="345" y="8" width="51" height="27.5"/>
                                                     <connections>
                                                         <action selector="sortDescending:" destination="9Zd-Ee-rl6" eventType="valueChanged" id="WXy-1K-ZUV"/>
                                                     </connections>
                                                 </switch>
                                             </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailing" secondItem="9jn-08-Ysb" secondAttribute="trailing" constant="20" id="D68-N4-LoG"/>
+                                                <constraint firstAttribute="bottom" secondItem="9jn-08-Ysb" secondAttribute="bottom" constant="8.5" id="Sf1-15-Ukd"/>
+                                                <constraint firstItem="9jn-08-Ysb" firstAttribute="top" secondItem="jQL-6N-rlc" secondAttribute="top" constant="8" id="plB-Ph-NLe"/>
+                                            </constraints>
                                         </tableViewCellContentView>
                                     </tableViewCell>
                                 </cells>

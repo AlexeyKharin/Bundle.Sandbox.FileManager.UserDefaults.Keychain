@@ -3,7 +3,7 @@ import UIKit
 import KeychainAccess
 
 class PasswordController: UIViewController {
-    
+    var checkPassword = String()
     private let keyChainProvider = KeyChainDataProvider()
     
     @IBOutlet weak var button: UIButton! {
@@ -11,7 +11,7 @@ class PasswordController: UIViewController {
             button.layer.cornerRadius = 5
             button.layer.borderColor = UIColor.blue.cgColor
             button.layer.borderWidth = 0.5
-            button.setTitle("Создать аккаунт", for: .normal)
+            button.setTitle("Войти", for: .normal)
         }
     }
     
@@ -28,15 +28,45 @@ class PasswordController: UIViewController {
                 keyChainProvider.save(account: writtenAccount, password: writtenPassword)
                 print(models)
             }
+        case 3:
+            guard let writtenPassword = password.text else { return }
+            checkWrittenPassword(password: writtenPassword)
         default:
             break
         }
     }
     
+    func checkWrittenPassword(password: String) {
+        if password == checkPassword {
+            openController()
+            button.tag = 4
+            button.setTitle("Войти", for: .normal)
+            if let writtenAccount = account.text {
+                keyChainProvider.save(account: writtenAccount, password: password)
+            }
+        } else {
+            let  alert = UIAlertController(title: "Ошибка", message: "Пароли не соотвествуют", preferredStyle: .alert)
+            let actionOk = UIAlertAction(title: "OK", style: .cancel) { [weak self] _ in
+                self?.button.tag = 4
+                self?.password.text = ""
+                self?.button.setTitle("Войти", for: .normal)
+                
+            }
+            alert.addAction(actionOk)
+            present(alert, animated: true, completion: nil)
+        }
+    }
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(true)
+        updateSaveButtonState()
+    }
+    
+    
     //Create textField
     @IBOutlet weak var password: UITextField!{
         didSet {
-            password.placeholder = "Введите пароль"
+            password.placeholder = "Введите пароль не менее 3 символов"
+            password.isSecureTextEntry = true
             password.addTarget(self, action: #selector(updateSaveButtonState), for: .editingChanged)
         }
     }
@@ -45,6 +75,7 @@ class PasswordController: UIViewController {
     @IBOutlet weak var account: UITextField! {
         didSet {
             account.placeholder = "Введите логин"
+            account.autocorrectionType = .no
             account.addTarget(self, action: #selector(updateSaveButtonState), for: .editingChanged)
         }
     }
@@ -56,34 +87,16 @@ class PasswordController: UIViewController {
     }
     
     func callRepeatPassword() {
-        let  alert = UIAlertController(title: "Хотите создать аккаунт?", message: "Повторите пароль", preferredStyle: .alert)
-        let actionCancel = UIAlertAction(title: "Отмена", style: .cancel) { (_) in
+        let  alert = UIAlertController(title: "По данному логину аккаунт не создан", message: "Если хотите создать аккаунт, повторите пароль", preferredStyle: .alert)
+        let actionCancel = UIAlertAction(title: "Отмена", style: .cancel) { _ in
         }
-        let actionContinue = UIAlertAction(title: "Создать", style: .default) { (_) in
-            
-            let textField = alert.textFields![0] as UITextField
-            guard let text = textField.text else { return }
-            
-            guard let originAccount = self.account.text, let originPassword = self.password.text else { return }
-            
-            if text == originPassword {
-                self.keyChainProvider.save(account: originAccount, password: originPassword)
-            
-            let models = self.keyChainProvider.obtains()
-            if let savedAccount = models.last {
-                self.account.text = savedAccount
-                self.password.text = self.keyChainProvider.obtain(account: savedAccount)
-                self.updateSaveButtonState()
+        let actionContinue = UIAlertAction(title: "Создать", style: .default) {  [weak self] _ in
+            if let writtenPassword = self?.password.text {
+                self?.checkPassword = writtenPassword
+                self?.button.tag = 3
+                self?.button.setTitle("Повторите пароль", for: .normal)
+                self?.password.text = ""
             }
-            } else {
-               let alertError = UIAlertController(title: "Ошибка", message: "Пароли не соотвествуют", preferredStyle: .alert)
-                let actionOk = UIAlertAction(title: "OK", style: .cancel) { (_) in }
-                alertError.addAction(actionOk)
-                self.present(alertError, animated: true, completion: nil)
-            }
-        }
-        alert.addTextField { (textField) in
-            textField.placeholder = "Не менее 4 символов"
         }
         alert.addAction(actionContinue)
         alert.addAction(actionCancel)
@@ -98,18 +111,15 @@ class PasswordController: UIViewController {
             button?.isEnabled = true
             
             let models = keyChainProvider.obtains()
-            
-            if ((models.first(where: { $0 == writtenAccount && keyChainProvider.obtain(account: $0) == writtenPassword })) != nil) {
-                button.setTitle(" Войти ", for: .normal)
-                button.tag = 2
-            } else {
-                button.setTitle("Создать аккаунт", for: .normal)
-                button.tag = 1
+            if button.tag != 3 {
+                if ((models.first(where: { $0 == writtenAccount && keyChainProvider.obtain(account: $0) == writtenPassword })) != nil) {
+                    button.tag = 2
+                } else {
+                    button.tag = 1
+                }
             }
-        }
-        else {
+        } else {
             button?.isEnabled = false
-            button.setTitle("Создать аккаунт", for: .normal)
         }
     }
     override func viewWillDisappear(_ animated: Bool) {
@@ -119,14 +129,6 @@ class PasswordController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        if  keyChainProvider.obtains().count != 0 {
-            let models = keyChainProvider.obtains()
-            print(models)
-            if let savedAccount = models.last {
-                account.text = savedAccount
-                password.text = keyChainProvider.obtain(account: savedAccount)
-            }
-        }
         updateSaveButtonState()
     }
 }
