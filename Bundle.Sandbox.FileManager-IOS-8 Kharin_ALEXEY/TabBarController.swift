@@ -26,6 +26,7 @@ class TabBarController: UITabBarController {
         
         if let navigationLast = viewControllers?.last as? UINavigationController, let settingsViewController = navigationLast.viewControllers.last as? SettingsTableViewController {
             settingsViewController.updataInTableView = viewController
+            UserDefaults.standard.setValue(true, forKey: Keys.BoolDescending.rawValue)
         }
         
     }

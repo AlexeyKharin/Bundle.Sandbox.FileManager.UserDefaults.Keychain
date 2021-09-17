@@ -54,7 +54,15 @@ class SettingsTableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        let ascending = UserDefaults.standard.bool(forKey: Keys.BoolAscending.rawValue)
+        let descending = UserDefaults.standard.bool(forKey: Keys.BoolDescending.rawValue)
         
+        if ascending {
+            self.ascending.isOn = true
+            self.descending.isEnabled = false
+        } else if descending {
+            self.descending.isOn = true
+            self.ascending.isEnabled = false
+        }
     }
-    
 }
